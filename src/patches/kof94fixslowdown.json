@@ -4,13 +4,13 @@
     {
       "type": "prom",
       "description": "Change first set of vram writes",
-      "address": "1338fe",
+      "address": "133904",
       "patchAsm": "changeFirstVramWrites.asm"
     },
     {
       "type": "prom",
       "description": "Change second set of vram writes",
-      "address": "133a2c",
+      "address": "133a32",
       "patchAsm": "changeSecondVramWrites.asm"
     }
   ]

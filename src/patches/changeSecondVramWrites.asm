@@ -1,6 +1,3 @@
-nop
-adda.w  D2, A0
-jmp     (A0)
 and.w D0, (A1)
 and.w D0, (A1)
 and.w D0, (A1)

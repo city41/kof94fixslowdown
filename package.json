@@ -1,6 +1,6 @@
 {
-  "name": "kof94cs",
-  "version": "1.0.0",
+  "name": "kof94fixslowdown",
+  "version": "1.0.1",
   "repository": "git@github.com:city41/kof94te.git",
   "author": "Matt Greer <matt.e.greer@gmail.com>",
   "license": "GPL-3.0-only",
