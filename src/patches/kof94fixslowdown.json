@@ -1,18 +1,17 @@
 {
   "description": "Fixes the vram writes so wait cycles are not needed",
-  "symbols": {
-    "BIOS_PLAYER_MOD1": "10fdb6",
-    "BIOS_PLAYER_MOD2": "10fdb7",
-    "MOVEM_STORAGE": "10e500",
-    "WROTE_A_MOVESET": "10e600",
-    "WHO_PAUSED_LAST": "10e602"
-  },
   "patches": [
     {
       "type": "prom",
-      "description": "Change vram writes",
-      "address": "0",
-      "patchAsm": "changeVramWrites.asm"
+      "description": "Change first set of vram writes",
+      "address": "1338fe",
+      "patchAsm": "changeFirstVramWrites.asm"
+    },
+    {
+      "type": "prom",
+      "description": "Change second set of vram writes",
+      "address": "133a2c",
+      "patchAsm": "changeSecondVramWrites.asm"
     }
   ]
 }

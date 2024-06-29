@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GAME='kof94'
-HACK='cs'
+HACK='fixslowdown'
 
 rm -rf ipsBinaries
 rm -rf ipsPatches
@@ -14,7 +14,7 @@ mkdir ipsBinaries/hacked
 yarn restore;
 cp ${MAME_ROM_DIR}/${GAME}.zip ipsBinaries/original/
 
-yarn ts-node src/patchRom/main.ts src/patches/kof94cs.json
+yarn ts-node src/patchRom/main.ts src/patches/kof94${HACK}.json
 cp ${MAME_ROM_DIR}/${GAME}.zip ipsBinaries/hacked/
 
 (cd ipsBinaries/original/ && unzip ${GAME}.zip)
